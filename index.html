@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+	</head>
+	<body ng-app="app">
+		<header>
+			
+		</header>
+		<main>
+			<div ui-calendar ng-model="eventSources"></div>
+
+		</main>
+	</body>
+	<footer>
+		
+	</footer>
+	<!-- jquery, moment, and angular have to get included before fullcalendar -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+	<script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+	<script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
+	<script src="./app/app.js"></script>
+</html>
