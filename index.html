@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="calendarDemoApp" id="top">
 <head>
-    <title>AngularUI Calendar for AngularJS</title>
+    <title>Timeline de juntas</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="/../bower_components/bootstrap-css/css/bootstrap.css" />
     <link rel="stylesheet" href="/../bower_components/fullcalendar/dist/fullcalendar.css">
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="dropdown pull-left">
                 <a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#">
-                    AngularUI
+                    Timeline
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -45,15 +45,16 @@
     <div class="container">
         <section id="directives-calendar" ng-controller="CalendarCtrl">
             <div class="page-header">
-                <h1>UI-Calendar</h1>
+                <h1>Timeline Wayra</h1>
             </div>
             <div class="well">
                 <div class="row-fluid">
                     <div class="span4">
-                        <h3>What?</h3>
-
-                        <p>Attach Angular objects to a calendar.</p>
-                        <p>Show the data binding between two different calendars using the same event sources.</p>
+                        <div class="btn-group calTools">
+                          <button type="button" class="btn btn-primary" ng-click="addEvent()">
+                            Agregar
+                        </button>
+                        </div>
 
                         <ul class="unstyled">
                             <li ng-repeat="e in events">
@@ -124,6 +125,10 @@
                     </div>
                 </div>
             </div>
+            </pre>
+        </section>
+    </div>
+</div>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-17352735-3']);
