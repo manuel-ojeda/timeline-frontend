@@ -10,7 +10,7 @@ calendarDemoApp.controller('CalendarCtrl',
     var m = date.getMonth();
     var y = date.getFullYear();
 
-    $scope.changeTo = 'Hungarian';
+    $scope.changeTo = 'Español';
     /* event source that pulls from google.com */
     $scope.eventSource = {
             url: "http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic",
@@ -118,14 +118,14 @@ calendarDemoApp.controller('CalendarCtrl',
     };
 
     $scope.changeLang = function() {
-      if($scope.changeTo === 'Hungarian'){
-        $scope.uiConfig.calendar.dayNames = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
-        $scope.uiConfig.calendar.dayNamesShort = ["Vas", "Hét", "Kedd", "Sze", "Csüt", "Pén", "Szo"];
+      if($scope.changeTo === 'Español'){
+        $scope.uiConfig.calendar.dayNames = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+        $scope.uiConfig.calendar.dayNamesShort = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
         $scope.changeTo= 'English';
       } else {
         $scope.uiConfig.calendar.dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         $scope.uiConfig.calendar.dayNamesShort = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-        $scope.changeTo = 'Hungarian';
+        $scope.changeTo = 'Español';
       }
     };
     /* event sources array*/
